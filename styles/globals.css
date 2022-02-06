@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Nunito", sans-serif;
+  background-color: aliceblue;
+  background-image: linear-gradient(#fcf5f5, #eff4fd);
+
+  /* background: linear-gradient(to right, #8e9eab, #eef2f3); */
 }
 
 a {
@@ -13,4 +19,111 @@ a {
 
 * {
   box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: black;
+  color: aliceblue;
+}
+.nav_title {
+  display: flex;
+  gap: 1rem;
+}
+.nav_title img {
+  height: 50px;
+  margin-top: 0.5rem;
+}
+.nav_title h5 {
+  margin-left: -0.5rem;
+}
+nav .menu {
+  display: flex;
+  gap: 1rem;
+}
+.main_container {
+  max-width: 600px;
+  margin: auto;
+}
+.inner_container {
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+.search_div {
+  margin-top: 1rem;
+  width: 100%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 16px 40px,
+    rgba(17, 17, 25, 0.15) 0px 0px 8px;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 0.2fr; */
+}
+.search_div textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+}
+.search_div .search_btn {
+  background-color: rgba(0, 118, 255, 0.9);
+  border: 1px solid rgba(0, 118, 255, 0.9);
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: "Nunito", sans-serif;
+  /* width: 100%; */
+}
+
+.youtube_thumbnail {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video_description h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.video_description {
+  font-size: 13px;
+  color: #555;
+  word-break: break-all;
+}
+
+.full_video_desc_btn {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.download_btn_container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+.download_btn_container button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgba(0, 118, 255, 0.9);
+  border-radius: 10px;
+}
+.download_btn_container button p {
+  margin: 0.2rem;
+}
+
+@media screen and (max-width: 450) {
+  .download_btn_container button {
+    width: 6rem;
+  }
 }
